@@ -71,7 +71,7 @@ RUN mkdir /install-tl-unx \
     \
 &&  $(find /usr/local/texlive -name tlmgr) path add \
 &&  tlmgr install --repository ${TEXLIVE_MIRROR} \
-      texlive-full
+      texlive-full \
 &&  tlmgr path add \
 &&  rm -rf /install-tl-unx
 
