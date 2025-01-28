@@ -1,3 +1,10 @@
 # equivalent to -gt option. Used to prevent latexmk from skipping recompilation
 # of output.log and output.pdf
 $go_mode = 3;
+
+# for pLaTeX
+$latex = 'platex';
+$bibtex = 'pbibtex';
+$dvipdf = 'dvipdfmx %O -o %D %S -f ptex-ipa.map';
+$makeindex = 'mendex -U %O -o %D %S';
+$pdf_mode = 3;
