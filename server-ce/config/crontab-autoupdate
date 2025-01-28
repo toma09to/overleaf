@@ -1,0 +1,1 @@
+0 4 * * 1    root  /overleaf/cron/autoupdate-tlmgr.sh >> /var/log/overleaf/cron-autoupdate-tlmgr.log 2>&1
